@@ -67,7 +67,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             //  Toast.makeText(v.getContext(), "position = " + i, Toast.LENGTH_LONG).show();
             if (i == 1) {
                 v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
-            } else if (i == 3) {
+            }
+            if (i == 2) {
+                v.getContext().startActivity(new Intent(v.getContext(), HostDetail.class));
+            }else if (i == 3) {
                 v.getContext().startActivity(new Intent(v.getContext(), SuggestedPlace.class));
             } else if (i == 4) {
                 v.getContext().startActivity(new Intent(v.getContext(), FoodList.class));
